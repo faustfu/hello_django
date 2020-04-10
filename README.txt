@@ -14,3 +14,6 @@ Run app test cases
 
 Use management shell
 1. python manage.py shell
+
+Find django source codes
+1. python -c "import django; print(django.__path__)"
