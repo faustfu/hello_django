@@ -8,3 +8,9 @@ Create a cuperuser:
 
 Start the server
 1. python manage.py runserver
+
+Run app test cases
+1. python manage.py test polls
+
+Use management shell
+1. python manage.py shell
