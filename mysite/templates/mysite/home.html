@@ -4,9 +4,11 @@
 <h2>Allauth Test</h2>
 {% if user.is_authenticated %}
   <p>Hello, {{ user.username }}!</p>
+  <a href="{% url 'account_logout' %}">Logout</a><br>
 {% else %}
   <p>You are not logged in</p>
   <ul>
+    <li><a href="{% url 'admin:index' %}">Login Page</a></li>
     <li><a href="{% provider_login_url 'github' %}">Github登入</a></li>
   </ul>
 {% endif %}
